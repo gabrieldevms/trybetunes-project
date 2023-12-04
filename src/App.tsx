@@ -1,12 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import Album from './pages/album';
-import Layout from './pages/index';
-import Login from './pages/login';
-import Search from './pages/search';
-import NotFound from './pages/notFound';
-import Favorites from './pages/favorites';
-import Profile from './pages/profile';
-import ProfileEdit from './pages/profileEdit';
+import Layout, { Album, Favorites, Login, NotFound, Profile, ProfileEdit, Search } from './pages';
 
 function App() {
   return (

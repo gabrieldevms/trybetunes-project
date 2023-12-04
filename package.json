@@ -11,7 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0",
+    "react-router-dom": "^6.19.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -19,7 +19,7 @@
     "test": "vitest",
     "lint:styles": "npx stylelint '**/*.css'",
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js,.jsx,.ts,.tsx",
-    "dev": "vite --open",
+    "dev": "vite --open --host",
     "preview": "vite preview"
   },
   "browserslist": {

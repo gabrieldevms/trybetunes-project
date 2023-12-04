@@ -1,11 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getUser, updateUser } from '../../services/userAPI';
-import { UserType, UserIni } from '../../types';
+import { UserType } from '../../types';
 import Loading from '../../components/loading';
 
 export default function ProfileEdit() {
-  const [dado, setDado] = useState<UserType>(UserIni);
+  const initialUser: UserType = {
+    name: '',
+    email: '',
+    image: '',
+    description: '',
+  };
+  const [dado, setDado] = useState<UserType>(initialUser);
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
 
